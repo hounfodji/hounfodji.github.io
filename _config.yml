@@ -10,13 +10,13 @@ author: Hospice
 
 # 👉 Décommente et mets ton vrai pseudo GitHub une fois le dépôt créé.
 #    (indispensable pour le flux RSS et le SEO)
-# url: "https://ton-pseudo.github.io"
+url: "https://hounfodji.github.io"
 
 # Liens du pied de page — édite ou supprime.
 social:
-  - { name: GitHub,   url: "https://github.com/" }
-  - { name: LinkedIn, url: "https://linkedin.com/in/" }
-  - { name: Email,    url: "mailto:hello@example.com" }
+  - { name: GitHub,   url: "https://github.com/hounfodji" }
+  - { name: LinkedIn, url: "https://www.linkedin.com/in/hospice-hounfodji-44a2a7235/" }
+  - { name: Email,    url: "mailto:hospicehounfodji@gmail.com" }
 
 # ─── Réglages techniques (à ne pas toucher en général) ───────
 permalink: /blog/:title/
