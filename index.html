@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="wrap hero">
+  <h1>Construire l'IA <em>là où je vis</em>.</h1>
+  <p class="lede">
+    Je conçois des systèmes d'IA — vision par ordinateur, modèles embarqués,
+    IA civique — depuis Cotonou, au Bénin. Ce carnet rassemble mes notes
+    techniques : ce que j'apprends, ce que je casse, ce que je finis par comprendre.
+  </p>
+</section>
+
+<section class="wrap">
+  <h2 class="section-label">Écrits</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        <span class="date">{% include date-fr.html date=post.date %}</span>
+        <span class="title">{{ post.title }}</span>
+      </a>
+      {% if post.description %}<p class="excerpt">{{ post.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+#  Configuration — édite les valeurs du haut.
+# ─────────────────────────────────────────────────────────────
+title: Hospice
+tagline: Carnet d'ingénieur IA
+description: >-
+  Notes techniques depuis Cotonou : vision par ordinateur, modèles
+  embarqués, et l'IA pensée pour le contexte africain.
+author: Hospice
+
+# 👉 Décommente et mets ton vrai pseudo GitHub une fois le dépôt créé.
+#    (indispensable pour le flux RSS et le SEO)
+# url: "https://ton-pseudo.github.io"
+
+# Liens du pied de page — édite ou supprime.
+social:
+  - { name: GitHub,   url: "https://github.com/" }
+  - { name: LinkedIn, url: "https://linkedin.com/in/" }
+  - { name: Email,    url: "mailto:hello@example.com" }
+
+# ─── Réglages techniques (à ne pas toucher en général) ───────
+permalink: /blog/:title/
+markdown: kramdown
+highlighter: rouge
+timezone: Africa/Porto-Novo
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

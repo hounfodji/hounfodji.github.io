@@ -1,0 +1,24 @@
+---
+layout: default
+title: Articles
+permalink: /blog/
+---
+<section class="wrap">
+  <h1 class="page-title">Articles</h1>
+
+  {% assign by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year in by_year %}
+  <h2 class="year-label">{{ year.name }}</h2>
+  <ul class="post-list">
+    {% for post in year.items %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        <span class="date">{% include date-fr.html date=post.date %}</span>
+        <span class="title">{{ post.title }}</span>
+      </a>
+      {% if post.description %}<p class="excerpt">{{ post.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>

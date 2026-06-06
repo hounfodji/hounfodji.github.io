@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {{ site.time | date: "%Y" }} {{ site.author }} · Cotonou, Bénin</span>
+    <span class="socials">
+      {% for s in site.social %}<a href="{{ s.url }}">{{ s.name }}</a>{% endfor %}
+    </span>
+  </div>
+</footer>
